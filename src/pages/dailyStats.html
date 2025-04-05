@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="public/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/homePageStyle.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="/src/assets/img/images-removebg-preview.png" alt="Logo" />
+        <span class="logo-text">CryptoBros </span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Daily stats</a>
+        <a href="/src/pages/convertPage.html">Convert</a>
+        <a href="/index.html">Home</a>
+      </nav>
+    </header>
+    <div class="stats-box">
+      <div class="stats">
+        <p>Todays trading volume</p>
+        <p class="p-1">
+          <span class="big-text" id="volume"> 111111111111$ </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="wallet-container">
+      <div class="wallet-header">
+        <h1>🔥Hot currencies🔥</h1>
+      </div>
+
+      <div class="crypto-boxes">
+        <!-- Bitcoin -->
+        <div class="crypto-box">
+          <div class="crypto-left">
+            <div class="crypto-icon crypto-bitcoin">
+              <img
+                src="/src/assets/img/bitcoin-black-bcb-logo-png_seeklogo-453573-removebg-preview.png"
+                alt="Bitcoin"
+              />
+            </div>
+            <div class="crypto-info">
+              <div class="crypto-name">Bitcoin</div>
+              <div class="crypto-ticker">BTC</div>
+            </div>
+          </div>
+          <div class="crypto-right">
+            <div class="crypto-price" id="btc-price">$31,352</div>
+          </div>
+        </div>
+
+        <!--Binance Coin-->
+        <div class="crypto-box">
+          <div class="crypto-left">
+            <div class="crypto-icon crypto-bnb">
+              <img
+                src="/src/assets/img/png-transparent-bnb-binance-coin-cryptocoin-exchange-coins-crypto-blockchain-cryptocurrency-logo-glyph-icon-thumbnail-removebg-preview.png"
+                alt="Tether"
+              />
+            </div>
+            <div class="crypto-info">
+              <div class="crypto-name">Binance Coin</div>
+              <div class="crypto-ticker">BNB</div>
+            </div>
+          </div>
+          <div class="crypto-right">
+            <div class="crypto-price" id="bnb-price">$1</div>
+          </div>
+        </div>
+
+        <!-- Tether -->
+        <div class="crypto-box">
+          <div class="crypto-left">
+            <div class="crypto-icon crypto-tether">
+              <img
+                src="/src/assets/img/tether-usdt-logo-removebg-preview.png"
+                alt="Tether"
+              />
+            </div>
+            <div class="crypto-info">
+              <div class="crypto-name">Tether</div>
+              <div class="crypto-ticker">USDT</div>
+            </div>
+          </div>
+          <div class="crypto-right">
+            <div class="crypto-price" id="usdt-price">$1</div>
+          </div>
+        </div>
+
+        <!-- Ethereum -->
+        <div class="crypto-box">
+          <div class="crypto-left">
+            <div class="crypto-icon crypto-ethereum">
+              <img
+                src="/src/assets/img/ethereum-eth-logo-removebg-preview.png"
+                alt="Ethereum"
+              />
+            </div>
+            <div class="crypto-info">
+              <div class="crypto-name">Ethereum</div>
+              <div class="crypto-ticker">ETH</div>
+            </div>
+          </div>
+          <div class="crypto-right">
+            <div class="crypto-price" id="eth-price">$1,143</div>
+          </div>
+        </div>
+
+        <!--Solana-->
+        <div class="crypto-box">
+          <div class="crypto-left">
+            <div class="crypto-icon crypto-solana">
+              <img
+                src="/src/assets/img/9f50b2dbe2ea1b3c041e4a45464a88a2-removebg-preview.png"
+                alt="Tether"
+              />
+            </div>
+            <div class="crypto-info">
+              <div class="crypto-name">Solana</div>
+              <div class="crypto-ticker">SOL</div>
+            </div>
+          </div>
+          <div class="crypto-right">
+            <div class="crypto-price" id="sol-price">$1.00</div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="action-bar">
+        <div class="action-button">
+          <div class="action-icon">⟲</div>
+          <div class="action-label">Deposit</div>
+        </div>
+        <div class="action-button">
+          <div class="action-icon">↔</div>
+          <div class="action-label">Convert</div>
+        </div>
+        <div class="action-button">
+          <div class="action-icon">↑</div>
+          <div class="action-label">Send</div>
+        </div>
+      </div>-->
+    </div>
+  </body>
+  <script type="module" src="/src/scripts/homePage.js" defer></script>
+</html>

@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Mairy';
+  src: url('/src/assets/fonts/MairyBold.woff2') format('woff2'),
+       url('/src/assets/fonts/MairyBold.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primary-color: #0052ff;
+  --background-dark: #050f19;
+  --text-color: #ffffff;
+  --secondary-background: #1a1f25;
+  --hover-color: #0a84ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1f25;
+  font-family: 'Mairy';
+}
+
+/*Експеримент стилі*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  font-weight: 700;
+  background-color: var(--background-dark);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--hover-color);
+}
+
+/*Кінець*/
+
+/* Common styles */
+input,
+select {
+  border: none;
+  outline: none;
+  border-bottom: 0.1875rem solid gray;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  font-family: 'Mairy', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 12.5rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-bottom: 0.1875rem solid gray;
+  background-color: inherit;
+  border-radius: 0.25rem 0.25rem 0 0;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #555;
+}
+
+select:focus {
+  border-color: #935deb;
+  box-shadow: 0 0.125rem 0.25rem rgba(147, 93, 235, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .box1, .box2 {
+    height: 10rem;
+  }
+  select {
+    font-size: 0.9375rem;
+    padding: 0.4375rem 0.625rem;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  select {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.5rem;
+    max-width: 9.375rem;
+  }
+}
+
+option {
+  font-family: 'Mairy', sans-serif;
+  font-size: 1rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px!important;
+  margin: 0.9375rem;
+}
+
+
+
+.right {
+  margin-left: auto;
+  display: flex;
+  gap: 0.625rem;
+}
+
+/* Box styles */
+.box1 {
+  position: relative;
+  padding: 0.9375rem;
+  display: flex;
+  margin: 0.625rem;
+  margin-top: 0!important;
+  width: 100%;
+  height: 11rem;
+  background-color: #ffff9e;
+  border-radius: 2.5rem;
+  max-width: 1180px;
+  align-items: center;
+}
+
+.box1 span {
+  position: absolute;
+  top: 1.875rem;
+  left: 2.5rem;
+  font-size: 1.625rem;
+  margin-bottom: 0;
+  width: 90%;
+  padding: 0.3125rem 0.625rem;
+}
+
+.box2 {
+  display: flex;
+  margin: 0.625rem;
+  width: 100%;
+  height: 11rem;
+  background-color: #ffd1df;
+  border-radius: 2.5rem;
+  max-width: 1180px;
+  justify-content: end;
+  padding: 0.9375rem;
+  padding-left: 3.125rem;
+  align-items: center;
+}
+
+.box2 p {
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+.box3 {
+  color: white;
+  display: flex;
+  margin: 0.625rem;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 2.5rem;
+  max-width: 1180px;
+  justify-content: baseline;
+  align-items: center;
+  padding-left: 3.125rem;
+  font-size: 1.5rem;
+}
+
+/* Circle with icon */
+.circle {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -2.5rem;
+  margin-bottom: -2.5rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Element-specific styles */
+#amount::placeholder {
+  font-family: 'Mairy';
+  font-size: 1.875rem;
+}
+
+#amount {
+  padding-top: 1.25rem;
+  font-family: 'Mairy', sans-serif;
+  font-size: 1.5rem;
+  max-width: 7.5rem;
+}
+
+#amount, #fromCoin {
+  background-color: #ffff9e;
+}
+
+#toCoin {
+  background-color: #ffd1df;
+}
+
+/* Ad styles */
+.ad-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ad {
+  display: flex;
+  justify-content: space-between;
+  max-width: 45rem;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1.5rem;
+  align-items: center;
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, #935deb 0, #e751fe 60%, #ff9332 100%);
+  height: 8rem;
+  font-size: 1.2rem;
+  margin: 0.625rem;
+  gap: 1rem;
+}
+
+.ad svg {
+  width: 30px;
+  height: 30px;
+}
+
+.ad img {
+  height: 100px;
+}
+
+.ad a {
+  color: yellowgreen;
+  text-decoration: none;
+}
+
+.box1 img, .box2 img {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 0.5rem;
+}
+
+
+/*Стилі для homePage*/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
