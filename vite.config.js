@@ -8,7 +8,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/vite-crypto-exchange/", // замініть на назву вашого GitHub репозиторію
+  base: "/vite-crypto-exchange/", // Важливо: починається з `/`, а не `.`!
   build: {
     outDir: "dist",
     rollupOptions: {
@@ -16,7 +16,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         dailyStats: resolve(__dirname, "dailyStats.html"),
         convertPage: resolve(__dirname, "convertPage.html"),
-        // додайте інші HTML сторінки за необхідності
+        // Додайте інші сторінки
       },
     },
   },
